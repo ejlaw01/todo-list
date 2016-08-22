@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <form class="form-group">
+        <label for="activity">Activity: </label>
+        <input name="activity" class="form-control" id="activity">
+        <label for="location">Location: </label>
+        <input name="location" class="form-control" id="location">
+        <label for="details">Details: </label>
+        <input name="details" class="form-control" id="details">
+        <label for="priority">Priority: </label>
+        <select class="form-control" id="priority">
+          <option>Low</option>
+          <option>Normal</option>
+          <option>High</option>
+        </select>
+        <hr>
+        <button type="submit" class="btn btn-default">Add</button>
+      </form>
+      <div class="output">
+        <ul>
+        </ul>
+        <button type="button" class="btn btn-default" id="complete">Complete</button>
+      </div>
+      <div class="details">
+        <h2></h2>
+        <p>Location: <span id="itemLocation"></span></p>
+        <p>Details: <span id="itemDetails"></span></p>
+        <p>Priority: <span id="itemPriority"></span></p>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
