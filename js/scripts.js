@@ -18,8 +18,12 @@ $("form").submit(function(event){
 
   $(".output ul").append("<li>" + inputActivity + "  " + '<input type="checkbox" id="checkbox" name="done"/>' + "</li>");
 
+
+
   $("ul li").last().click(function(){
-    $(".details").show();
+    $(".details h2").toggle();
+    $(".details p").toggle();
+    $("#complete").toggle();
     $(".details h2").text(newToDo.activity);
     $("#itemLocation").text(newToDo.place);
     $("#itemDetails").text(newToDo.details);
